@@ -4,9 +4,6 @@ import java.io.IOException;
 
 public class PostalRateCalculator {
 	
-	public static void main (String args[]){
-		System.out.println(getRegularRate("K1P0A9", 15, "xpresspost"));
-	}
 	public static double getRegularRate(String destination, double weight, String type ){
 		
 		//Capitalize the first letter of type to match name of files
@@ -76,7 +73,7 @@ public class PostalRateCalculator {
 	
 	}
 	
-	public static double roundToHalf(double d) {
+	private static double roundToHalf(double d) {
 	    return Math.ceil(d * 2) / 2.0;
 	}
 	
